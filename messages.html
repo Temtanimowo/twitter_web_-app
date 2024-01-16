@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="download (1).png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.3.0-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>twitter/profile.com</title>
+    <style>
+      .classmall {
+        height: 100px;
+      }
+      
+      .row {
+        height: 900px;
+      }
+      .row #row {
+        height: 100px;
+      }
+      img{
+        height: 30px;
+        width: 35px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        /*
+        border: 100px;
+        border-radius: 10px;*/
+      }
+     #remote  img {
+        height: 20px;
+        width: 20px;
+        margin-right: 15px;
+      }
+      #remote link{
+        list-style: none;
+        margin-bottom: 20px;
+      }
+      #mag{
+        margin-bottom: 40px;
+      }
+      #button{
+        background-color: brown;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+      }
+      h4{
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .btn-custom{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 95%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+      }
+      .btn-custom1{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 55%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+        
+      }
+      a{
+        text-decoration: none;
+        color: #15a3ce;
+      }
+      #post-page{
+        width: 100%;
+        height: 500px;
+        
+        border-radius: 20px;
+        object-fit: contain;
+      }
+      #post-section{
+        
+        width: 100%;
+        height: 430px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #text-section{
+        background-color: bisque;
+        width: 100%;
+        height: 70px;
+      }
+      .boxcontainer{
+       
+        margin-top: 300px;
+       
+        width: 100%;
+        height: 490px;
+        border: 2px solid #15a3ce!important;
+       
+        border-radius: 12px;
+      }
+      .elementscontainer{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .search{
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding: 0px 5px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      .search:focus{
+        outline: none;
+      }
+      .material-icons{
+        font-size: 26;
+        color: #15a3ce!important;
+      } 
+      #search-bar{
+        width: 100%;
+        height: 90px;
+        margin: auto;
+        position:relative;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        
+      }
+      .post{
+        border: none;
+        height: 49px;
+        width: 100%;
+        padding: 0px 5px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      #search-bar img{
+        height: 100px;
+        width: 70px;
+        
+      }
+      .trend{
+        height:740px;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .trend h4{
+        margin-left: 6px;
+       /*margin-bottom: 8px;
+        position: absolute;*/
+      
+      }
+      .profile_lnk{
+        margin-top: 95px;
+        margin-left: 40px;
+      }
+      .set_profile{
+        margin-top: 15px;
+        margin-left: 500px;
+      }
+      .profile_name{
+        margin-top: 50px;
+        margin-left: 15px;
+      }
+      .optal{
+        float: left;
+      }
+      .back_home{
+        float: left;
+        margin-top: 5px;
+      }
+      .back_profile{
+        font-weight: 600;
+      font-size: larger;
+      }
+      .back_profile1{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 40px;
+       
+        
+      }
+      #profile_magmage{
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      /*#clob{
+       
+        margin-bottom: 70px;
+        position:relative;
+        margin-right: 200px;
+      }*/
+      #mini_profile_img{
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+      }
+      #temi{
+        margin-top: 25px;
+        position: absolute;
+      }
+      #join_date{
+        margin-top: 30px;
+        font-size: medium;
+        font-weight: 100;
+      }
+      #followers{
+        font-weight: 100;
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 100px;
+      }
+      #following{
+        font-weight: 100;
+      }
+      #profile_post{
+        margin-right: 80px;
+      }
+      .profile_show{
+        margin-top: 30px;
+      }
+      #technic_view{
+        border: 1px solid #15a3ce!important;
+        border-radius: 2%;
+        height: 785px;
+      }
+      .lets_get{
+        margin-top: 20px;
+        width: 100%;
+        height: 220px;
+        background-color: burlywood;
+      }
+      #lets_collab{
+        font-size: larger;
+        font-weight: bolder ;
+      }
+      body{
+        -webkit-text-size-adjust: 100%;
+        
+      }
+      .message_inbox{
+        height: 800px;
+        width: 100%;
+        
+
+      }
+      #my_inbox{
+        margin-left: 10px;
+        font-size: large;
+        font-weight: 700;
+      }
+      #select{
+        margin-left: 10px;
+        font-size: large;
+        font-weight: 700;
+        color: #15a3ce!important;
+      }
+      .new_mess{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 35%;
+        height: 45px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+        margin-left: 10px;
+      }
+      .back_profile{
+        color: #15a3ce!important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid mb 90px bg-black">
+      
+      <div class="container-fluid" >
+        <div class="row">
+          <div  class="col-sm-2" >
+            <img src="images/twitter_blk_1.png" alt="black_twitter_img">
+            
+            <p id="remote"><i class="fa-solid fa-house"></i>
+            
+              <a href="http://127.0.0.1:5501/index.html">Home</a>
+             </p>
+             <p id="mag"> <i class="fa-brands fa-internet-explorer"></i>
+              <a href="http://127.0.0.1:5501/explore.html">Explore</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-bell"></i>
+              <a href="http://127.0.0.1:5501/notifications.html">Notification</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-envelope"></i>
+              <a href="http://127.0.0.1:5501/messages.html">Messages</a>
+             </p>
+             <p id="mag"> <i class="fa-solid fa-bookmark"></i>
+              <a href="http://127.0.0.1:5501/Bookmarks.html">Bookmarks</a>
+             </p>
+             <p id="mag"><i class="fa-solid fa-table-list"></i>
+              <a href="http://127.0.0.1:5501/Lists.html">Lists</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-user"></i>
+              <a href="http://127.0.0.1:5501/profile.html
+              ">Profile</a>
+             </p>
+             <p id="mag"><i class="fa-solid fa-circle-info"></i>
+              <a href="http://">More</a>
+             </p>
+           <div class="form-group">
+            <button class="btn-custom">Post</button>
+           </div>
+           <a href="">
+           <img src="images/profile_img3.jpeg" alt="mini_profile_img" id="mini_profile_img">
+          </a>
+           <div class="profile_lnk">
+           <a href="">profile_name</a>
+           <a href="" id="clob">@Username</a>
+           </div>
+          </div>
+          <div class="col-sm-4 " id="technic_view">
+            <p class="back_profile">Messages</p>
+            <div class="message_inbox">
+                <p id="my_inbox">Welcome to your inbox!</p>
+                <p>Drop a line. share posts and more with private conversations between you and others on Twitter.</p>
+                <div class="form-group1">
+                    <button class="btn-custom1">Write a message</button>
+                   </div>
+            </div>
+           
+               
+            
+            
+            
+           
+            <div id="post-page">
+              
+            </div>
+        </div>
+            
+            <div class="col-sm-6 " >
+            <div class="boxcontainer">
+              <p id="select">Select a message</p>
+              <p>Choose from your existing conversations,start a new one, or just keep swimming.</p>
+              <div class="new_mass">
+                <button class="new_mess">New message</button>
+               </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+   
+    <script src="bootstrap/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+  </body>
+</html>

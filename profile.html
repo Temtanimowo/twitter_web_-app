@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="download (1).png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.3.0-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>twitter/profile.com</title>
+    <style>
+      .classmall {
+        height: 100px;
+      }
+      
+      .row {
+        height: 900px;
+      }
+      .row #row {
+        height: 100px;
+      }
+      img{
+        height: 30px;
+        width: 35px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        /*
+        border: 100px;
+        border-radius: 10px;*/
+      }
+     #remote  img {
+        height: 20px;
+        width: 20px;
+        margin-right: 15px;
+      }
+      #remote link{
+        list-style: none;
+        margin-bottom: 20px;
+      }
+      #mag{
+        margin-bottom: 40px;
+      }
+      #button{
+        background-color: brown;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+      }
+      h4{
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .btn-custom{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 95%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+      }
+      .btn-custom1{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 60px;
+        height: 27px;
+        border-radius: 50px;
+        font-family:Cambria  ;
+        margin-left: 595px;
+        padding-bottom: 3px;
+        
+      }
+      a{
+        text-decoration: none;
+        color: #15a3ce;
+      }
+      #post-page{
+        background-color: #15a3ce!important;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        object-fit: contain;
+      }
+      #post-section{
+        
+        width: 100%;
+        height: 430px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #text-section{
+        background-color: bisque;
+        width: 100%;
+        height: 70px;
+      }
+      .boxcontainer{
+        margin: auto;
+        margin-top: 10px;
+        position:relative;
+        width: 400px;
+        height: 34px;
+        border: 2px solid #15a3ce!important;
+        padding: 0px 5px;
+        border-radius: 50px;
+      }
+      .elementscontainer{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .search{
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding: 0px 5px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      .search:focus{
+        outline: none;
+      }
+      .material-icons{
+        font-size: 26;
+        color: #15a3ce!important;
+      } 
+      #search-bar{
+        width: 100%;
+        height: 90px;
+        margin: auto;
+        position:relative;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        
+      }
+      .post{
+        border: none;
+        height: 49px;
+        width: 100%;
+        padding: 0px 5px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      #search-bar img{
+        height: 100px;
+        width: 70px;
+        
+      }
+      .trend{
+        height: 77%;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .trend h4{
+        margin-left: 6px;
+      
+      
+      }
+      .profile_lnk{
+        margin-top: 95px;
+        margin-left: 40px;
+      }
+      .set_profile{
+        margin-top: 15px;
+        margin-left: 500px;
+      }
+      .profile_name{
+        margin-top: 50px;
+        margin-left: 15px;
+      }
+      #profile_image{
+        width: 170px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+        margin-left: 25px;
+        margin-top:130px;
+     
+
+      }
+      .optal{
+        float: left;
+      }
+      .back_home{
+        float: left;
+        margin-top: 5px;
+      }
+      .back_profile{
+        margin-left: 40px;
+      font-size: larger;
+      }
+      .back_profile1{
+        margin-top: 20px;
+        position: absolute;
+        margin-left: 40px;
+       
+        
+      }
+      #profile_magmage{
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      /*#clob{
+       
+        margin-bottom: 70px;
+        position:relative;
+        margin-right: 200px;
+      }*/
+      #mini_profile_img{
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+      }
+      #temi{
+        margin-top: 25px;
+        position: absolute;
+      }
+      #join_date{
+        margin-top: 30px;
+        font-size: medium;
+        font-weight: 100;
+      }
+      #followers{
+        font-weight: 100;
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 100px;
+      }
+      #following{
+        font-weight: 100;
+      }
+      #profile_post{
+        margin-right: 80px;
+      }
+      .profile_show{
+        margin-top: 30px;
+      }
+      #technic_view{
+        border: 1px solid #15a3ce!important;
+      }
+      .lets_get{
+        margin-top: 20px;
+        width: 100%;
+        height: 220px;
+        background-color: burlywood;
+      }
+      #lets_collab{
+        font-size: larger;
+        font-weight: bolder ;
+      }
+      body{
+        -webkit-text-size-adjust: 100%;
+        
+      }
+      #Trend{
+        color: #15a3ce!important;
+      }
+      #dot {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 330px;
+        font-size: x-large;
+        color: #616369;
+      }
+      .dot {
+        margin-top: 15px;
+        margin-left: 7px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 100;
+        color: #616369;
+      }
+      #toto {
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 7px;
+        color: #15a3ce !important;
+        font-weight: 600;
+      }
+      #toto_post {
+        margin-left: 7px;
+        color: #616369;
+      }
+      .trenb {
+        height: 155px;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce !important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      #trenb {
+        margin-left: 6px;
+        font-size: large;
+        font-weight: 600;
+        color: #15a3ce !important;
+      }
+      #solution {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #6b1515;
+        border-radius: 50%;
+        margin-top: 4px;
+        float: left;
+      }
+      #host {
+        position: absolute;
+        margin-left: 110px;
+        font-size: small;
+        font-weight: 400;
+        color: #616369;
+        margin-top: 1px;
+      }
+      #mellon {
+        margin-left: 19px;
+        margin-top: px;
+        font-size: small;
+        font-weight: 600;
+        color: #15a3ce !important;
+      }
+
+      #mano_img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-top: 4px;
+      }
+      #mano {
+        background: #e8dada !important;
+        color: #15a3ce !important ;
+        border: none;
+        width: 80px;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family: Cambria;
+      }
+      .bata_button {
+        margin-left: 300px;
+        position: absolute;
+        margin-top: 41px;
+      }
+      .col-sm-9 {
+        width: 70%;
+        height: 35%;
+      }
+      #path{
+        color: #85878c;
+      }
+      .who{
+        height: 25%;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .who p{
+        margin-left: 6px;
+        font-size: large;
+        font-weight: 600;
+       
+      }
+      #who{
+        color: #15a3ce!important;
+      }
+      #Musk_Profile{
+        margin-top: 3px;
+        height: 40px;
+        width: 40px;
+        border:  2px solid #6b1515;
+        border-radius: 50%;
+        float: left;
+
+      }
+      #pot{
+        position: absolute;
+        font-size: medium;
+        font-weight: 300;
+        color: #85878c;
+        margin-top: 22px;
+        margin-left: 49px;
+      }
+      #tot_post{
+        margin-left: 51px;
+        font-size: large;
+        font-weight: 600;
+      }
+      #mass_butt{
+        margin-left: 285px;
+        float: right;
+        position: absolute;
+        margin-top: 8px;
+       
+        
+      }
+      #mass_buth{
+        background: #e8dada !important;
+        color: #15a3ce !important ;
+        border: none;
+        width: 90px;
+        height: 35px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family: Cambria;
+       
+      }
+      #chat{
+        margin-bottom: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid mb 90px bg-black">
+      
+      <div class="container-fluid" >
+        <div class="row">
+          <div  class="col-sm-2" >
+            <img src="images/twitter_blk_1.png" alt="black_twitter_img">
+            
+            <p id="remote"><i class="fa-solid fa-house"></i>
+            
+              <a href="http://127.0.0.1:5501/index.html">Home</a>
+             </p>
+             <p id="mag"> <i class="fa-brands fa-internet-explorer"></i>
+              <a href="http://127.0.0.1:5501/explore.html">Explore</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-bell"></i>
+              <a href="http://127.0.0.1:5501/notifications.html">Notification</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-envelope"></i>
+              <a href="http://127.0.0.1:5501/messages.html">Messages</a>
+             </p>
+             <p id="mag"> <i class="fa-solid fa-bookmark"></i>
+              <a href="http://127.0.0.1:5501/Bookmarks.html">Bookmarks</a>
+             </p>
+             <p id="mag"><i class="fa-solid fa-table-list"></i>
+              <a href="http://127.0.0.1:5501/Lists.html">Lists</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-user"></i>
+              <a href="http://127.0.0.1:5501/profile.html
+              ">Profile</a>
+             </p>
+             <p id="mag"><i class="fa-solid fa-circle-info"></i>
+              <a href="http://">More</a>
+             </p>
+           <div class="form-group">
+            <button class="btn-custom">Post</button>
+           </div>
+           <a href="">
+           <img src="images/profile_img3.jpeg" alt="mini_profile_img" id="mini_profile_img">
+          </a>
+           <div class="profile_lnk">
+           <a href="">profile_name</a>
+           <a href="" id="clob">@Username</a>
+           </div>
+          </div>
+          <div class="col-sm-6 " id="technic_view">
+            <a href="http://127.0.0.1:5501/index.html" class="back_home"><-</a>
+            <p class="back_profile1">0 posts</p>
+            <p class="back_profile">Profile_Name</p>
+            
+            
+           
+            <div id="post-page">
+              <a href="">
+              <img src="images/profile_img3.jpeg" alt="profile_image" id="profile_image">
+            </a>
+            </div>
+            
+            <div id="post-section">
+                <div class="set_profile">
+                    <a href="">Set up profile</a>
+                </div>
+                <div class="profile_name">
+                  <p id="temi">@username</p>
+                    <h4>Profile Name</h4>
+                    <p id="join_date">Joined August 2023</p>
+                    <p id="followers"><a href="">0</a>Followers</p>
+                    <p id="following"><a href="">0</a>Following</p>
+                    <div class="profile_show">
+                    <a href="" id="profile_post">Post</a>
+                    <a href="" id="profile_post">Replies</a>
+                    <a href="" id="profile_post">Highlights</a>
+                    <a href="" id="profile_post">Media</a>
+                    <a href="" id="profile_post">Likes</a>
+                  </div>
+                  <div class="lets_get">
+                    <p id="lets_collab">Let,s get you set up</p>
+                  </div>
+                    
+                </div>
+            </div>
+            
+            <div id="text-section"></div>
+          </div>
+          <div class="col-sm-4 " >
+            <div class="boxcontainer">
+              <table class="elementscontainer">
+                <tr>
+                  <td>
+                    <input type="text" placeholder="search Twitter" class="search">
+                  </td>
+                  <td>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="trenb">
+              <p id="trenb">Listen live in Spaces</p>
+              <div class="col-sm-9">
+                <div class="bata_button">
+                  <button id="mano">
+                    <img
+                      src="images/musk.jpeg"
+                      alt="clickable_image"
+                      id="mano_img"
+                    />
+                    +12
+                  </button>
+                </div>
+                <img
+                  src="images/musk.jpeg"
+                  alt="musk_profile_picture"
+                  id="solution"
+                />
+                <p id="host">is hosting</p>
+                <p id="mellon">Elon Musk</p>
+                <p id="path">
+                  Elon answered questions from CNBC after leaving the Senate AI
+                  Insight Forum a few hours ago
+                </p>
+              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="who">
+              <p id="who">You might like</p>
+              <div id="chat">
+                <div id="mass_butt">
+                  <button id="mass_buth">Follow</button>
+                </div>
+                <a href="#" id="tim"><img src="images/musk.jpeg" alt="Musk_Profile_image" id="Musk_Profile"></a>
+                    <p id="pot">@elonMusk</p>
+                    <p id="tot_post">Elon Musk</p>
+                    
+              </div>
+              <div id="chat">
+                <div id="mass_butt">
+                  <button id="mass_buth">Follow</button>
+                </div>
+                <a href="#" id="tim"><img src="images/x_output_01.jpeg" alt="New_twitter_image_logo" id="Musk_Profile"></a>
+                    <p id="pot">@twitterX</p>
+                    <p id="tot_post">Twitter-X</p>
+                    
+              </div>
+              <div id="chat">
+                <div id="mass_butt">
+                  <button id="mass_buth">Follow</button>
+                </div>
+                <a href="#" id="tim"><img src="images/profile_img3.jpeg" alt="TT_James__Profile_image" id="Musk_Profile"></a>
+                    <p id="pot">@tt_james_</p>
+                    <p id="tot_post">TT_James_</p>
+                    
+              </div>
+                
+              </div>
+            <div class="trend">
+              <h4 id="Trend">Trends for you</h4>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#TOTO</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">35.5k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#bubagirl</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">50.4k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#snapchat</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">71k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#deprem</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">39.6k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#KenyaVsUganda</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">20.6k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">Angel</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">226k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">Christine Nampeera</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">18.9k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">Yes Daddy</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">5,664 posts</p>
+              </div>
+             
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <script src="bootstrap/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+  </body>
+</html>

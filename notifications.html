@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="download (1).png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.3.0-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>twitter/profile.com</title>
+    <style>
+     
+      #mag{
+        margin-bottom: 40px;
+      }
+      .btn-custom{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 95%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+      }
+      
+      
+      .profile_lnk{ 
+        margin-top: 95px;
+        margin-left: 40px;
+      }
+     
+     
+      #clob{
+       
+        margin-bottom: 70px;
+        position:relative;
+        margin-right: 200px;
+      }
+      #mini_profile_img{
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+      }
+      .classmall {
+        height: 100px;
+      }
+      
+      .row {
+        height: 900px;
+      }
+      .row #row {
+        height: 100px;
+      }
+      img{
+        height: 30px;
+        width: 35px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        /*
+        border: 100px;
+        border-radius: 10px;*/
+      }
+     #remote  img {
+        height: 20px;
+        width: 20px;
+        margin-right: 15px;
+      }
+      #remote link{
+        list-style: none;
+        margin-bottom: 20px;
+      }
+      #mag{
+        margin-bottom: 40px;
+      }
+      #button{
+        background-color: brown;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+      }
+      h4{
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .btn-custom{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 95%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+      }
+      .btn-custom1{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 60px;
+        height: 27px;
+        border-radius: 50px;
+        font-family:Cambria  ;
+        margin-left: 595px;
+        padding-bottom: 3px;
+        
+      }
+      a{
+        text-decoration: none;
+        color: #15a3ce;
+      }
+      #post-page{
+        background-color: aqua;
+        width: 100%;
+        height: 100px;
+      }
+      #post-section{
+        background-color: aquamarine;
+        width: 100%;
+        height: 430px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #text-section{
+        background-color: bisque;
+        width: 100%;
+        height: 70px;
+      }
+      .boxcontainer{
+        margin: auto;
+        margin-top: 10px;
+        position:relative;
+        width: 400px;
+        height: 34px;
+        border: 2px solid #15a3ce!important;
+        padding: 0px 5px;
+        border-radius: 50px;
+      }
+      .elementscontainer{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .search{
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding: 0px 5px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      .search:focus{
+        outline: none;
+      }
+      .material-icons{
+        font-size: 26;
+        color: #15a3ce!important;
+      } 
+      #search-bar{
+        width: 100%;
+        height: 90px;
+        margin: auto;
+        position:relative;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        
+      }
+      .post{
+        border: none;
+        height: 49px;
+        width: 100%;
+        padding: 0px 5px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      #search-bar img{
+        height: 20px;
+        width: 20px;
+        
+      }
+      .trend{
+        height: 90%;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .trend h4{
+        margin-left: 6px;
+        color: #15a3ce!important;
+      
+      
+      }
+      .profile_lnk{
+        margin-top: 95px;
+        margin-left: 50px;
+      }
+      #mini_profile_img{
+        margin-right: 50px;
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+      }
+      .down{
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: larger;
+      }
+      .down-down{
+        height: 600px;
+        width: 100%;
+        border: 1px solid #15a3ce!important;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .profile_show{
+        margin-top: 30px;
+      }
+      #profile_post{
+        margin-right: 160px;
+      }
+      .n{
+        font-weight: 700;
+        font-size: larger;
+        color: #15a3ce!important;
+      }
+      #profile_post_id{
+        margin-left:30px;
+        margin-right:160px ;
+      }
+      .for_where{
+        margin-left: 20px;
+        font-weight: 100;
+       font-size: larger;
+      }
+      #Trend{
+        
+      }
+      #dot {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 330px;
+        font-size: x-large;
+        color: #616369;
+      }
+      .dot {
+        margin-top: 15px;
+        margin-left: 7px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 100;
+        color: #616369;
+      }
+      #toto {
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 7px;
+        color: #15a3ce !important;
+        font-weight: 600;
+      }
+      #toto_post {
+        margin-left: 7px;
+        color: #616369;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid mb 90px bg-black">
+      
+      <div class="container-fluid" >
+        <div class="row">
+          <div  class="col-sm-2" >
+            <img src="images/twitter_blk_1.png" alt="black_twitter_img">
+            
+            <p id="remote"><i class="fa-solid fa-house"></i>
+            
+              <a href="http://127.0.0.1:5501/index.html">Home</a>
+             </p>
+             <p id="mag"> <i class="fa-brands fa-internet-explorer"></i>
+              <a href="http://127.0.0.1:5501/explore.html">Explore</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-bell"></i>
+              <a href="http://127.0.0.1:5501/notifications.html">Notification</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-envelope"></i>
+              <a href="http://127.0.0.1:5501/messages.html">Messages</a>
+             </p>
+             <p id="mag"> <i class="fa-solid fa-bookmark"></i>
+              <a href="http://127.0.0.1:5501/Bookmarks.html">Bookmarks</a>
+             </p>
+             <p id="mag"><i class="fa-solid fa-table-list"></i>
+              <a href="http://127.0.0.1:5501/Lists.html">Lists</a>
+             </p>
+             <p id="mag"> <i class="fa-regular fa-user"></i>
+              <a href="http://127.0.0.1:5501/profile.html
+              ">Profile</a>
+             </p>
+             <p id="mag"><i class="fa-solid fa-circle-info"></i>
+              <a href="http://">More</a>
+             </p>
+           <div class="form-group">
+            <button class="btn-custom">Post</button>
+           </div>
+           <a href="">
+           <img src="images/profile_img3.jpeg" alt="mini_profile_img" id="mini_profile_img">
+          </a>
+           <div class="profile_lnk">
+           <a href="">profile_name</a>
+           <a href="" id="clob">@Username</a>
+           </div>
+          </div>
+          <div class="col-sm-6 " >
+            <h4 class="n">Notifications</h4>
+            <div class="profile_show">
+                <a href="" id="profile_post_id">All</a>
+                <a href="" id="profile_post">Verified</a>
+                <a href="" id="profile_post">Mentions</a>
+                <div class="down-down">
+                    <p class="down">Nothing to see here---
+                        yet
+                    </p>
+                    <p class="for_where">From likes to reposts and a Whole lot more, this is where all the actions happens.</p>
+                </div>
+              </div>
+           
+            
+          </div>
+            
+          <div class="col-sm-4 " >
+            <div class="boxcontainer">
+              <table class="elementscontainer">
+                <tr>
+                  <td>
+                    <input type="text" placeholder="search Twitter" class="search">
+                  </td>
+                  <td>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="trend">
+              <h4 id="Trend">Trends for you</h4>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#TOTO</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">35.5k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#bubagirl</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">50.4k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#snapchat</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">71k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#deprem</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">39.6k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#KenyaVsUganda</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">20.6k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">Angel</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">226k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">Christine Nampeera</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">18.9k posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">Yes Daddy</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">5,664 posts</p>
+              </div>
+              <div>
+                <p id="dot">...</p>
+                <a href="#" id="toto">#xweek</a>
+                <p class="dot">Trending in Nigeria</p>
+                <p id="toto_post">4,561 posts</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+   
+    <script src="bootstrap/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+  </body>
+</html>

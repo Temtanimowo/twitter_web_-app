@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="download (1).png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.3.0-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>twitter/profile.com</title>
+    <style>
+     
+      #mag{
+        margin-bottom: 40px;
+      }
+      .btn-custom{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 95%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+      }
+      
+      
+      .profile_lnk{ 
+        margin-top: 95px;
+        margin-left: 40px;
+      }
+     
+     
+      #clob{
+       
+        margin-bottom: 70px;
+        position:relative;
+        margin-right: 200px;
+      }
+      #mini_profile_img{
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+      }
+      .classmall {
+        height: 100px;
+      }
+      
+      .row {
+        height: 900px;
+      }
+      .row #row {
+        height: 100px;
+      }
+      img{
+        height: 30px;
+        width: 35px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        /*
+        border: 100px;
+        border-radius: 10px;*/
+      }
+     #remote  img {
+        height: 20px;
+        width: 20px;
+        margin-right: 15px;
+      }
+      #remote link{
+        list-style: none;
+        margin-bottom: 20px;
+      }
+      #mag{
+        margin-bottom: 40px;
+      }
+      #button{
+        background-color: brown;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+      }
+      h4{
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .btn-custom{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 95%;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family:Cambria  ;
+      }
+      .btn-custom1{
+        background: #15a3ce!important;
+        color: #fff !important;
+        border: none;
+        width: 60px;
+        height: 27px;
+        border-radius: 50px;
+        font-family:Cambria  ;
+        margin-left: 595px;
+        padding-bottom: 3px;
+        
+      }
+      a{
+        text-decoration: none;
+        color: #15a3ce;
+      }
+      #post-page{
+        background-color: aqua;
+        width: 100%;
+        height: 100px;
+      }
+      #post-section{
+        background-color: aquamarine;
+        width: 100%;
+        height: 430px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #text-section{
+        background-color: bisque;
+        width: 100%;
+        height: 70px;
+      }
+      .boxcontainer{
+        margin: auto;
+        margin-top: 10px;
+        position:relative;
+        width: 400px;
+        height: 34px;
+        border: 2px solid #15a3ce!important;
+        padding: 0px 5px;
+        border-radius: 50px;
+      }
+      .elementscontainer{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .search{
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding: 0px 5px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      .search:focus{
+        outline: none;
+      }
+      .material-icons{
+        font-size: 26;
+        color: #15a3ce!important;
+      } 
+      #search-bar{
+        width: 100%;
+        height: 90px;
+        margin: auto;
+        position:relative;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        
+      }
+      .post{
+        border: none;
+        height: 49px;
+        width: 100%;
+        padding: 0px 5px;
+        font-size: 18px;
+        font-family: "nunito";
+        color: #424242;
+        font-weight: 500;
+      }
+      #search-bar img{
+        height: 20px;
+        width: 20px;
+        
+      }
+      .trenq{
+        height: 20%;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .trenq p{
+        margin-left: 6px;
+        font-size: large;
+        font-weight: 600;
+        color: #15a3ce!important;
+      }
+      .profile_lnk{
+        margin-top: 95px;
+        margin-left: 50px;
+      }
+      #mini_profile_img{
+        margin-right: 50px;
+        margin-top: 100px;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #15a3ce!important;
+      }
+      
+     
+      .trenb {
+        height: 155px;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce !important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      #trenb {
+        margin-left: 6px;
+        font-size: large;
+        font-weight: 600;
+        color: #15a3ce !important;
+      }
+      #solution {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #6b1515;
+        border-radius: 50%;
+        margin-top: 4px;
+        float: left;
+      }
+      #host {
+        position: absolute;
+        margin-left: 110px;
+        font-size: small;
+        font-weight: 400;
+        color: #616369;
+        margin-top: 1px;
+      }
+      #mellon {
+        margin-left: 19px;
+        margin-top: px;
+        font-size: small;
+        font-weight: 600;
+        color: #15a3ce !important;
+      }
+
+      #mano_img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        float: left;
+        margin-top: 4px;
+      }
+      #mano {
+        background: #e8dada !important;
+        color: #15a3ce !important ;
+        border: none;
+        width: 80px;
+        height: 40px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family: Cambria;
+        
+      }
+      .bata_button {
+        margin-left: 300px;
+        position: absolute;
+        margin-top: 41px;
+       
+      }
+      .col-sm-9 {
+        width: 70%;
+        height: 35%;
+      }
+      #path{
+        color: #85878c;
+      }
+      .who{
+        height: 25%;
+        width: 400px;
+        margin: auto;
+        border: 1px solid #15a3ce!important;
+        padding: 0px 5px;
+        margin-top: 2px;
+        border-radius: 20px;
+      }
+      .who p{
+        margin-left: 6px;
+        font-size: large;
+        font-weight: 600;
+       
+      }
+      #who{
+        color: #15a3ce!important;
+      }
+      #Musk_Profile{
+        margin-top: 3px;
+        height: 40px;
+        width: 40px;
+        border:  2px solid #6b1515;
+        border-radius: 50%;
+        float: left;
+
+      }
+      #pot{
+        position: absolute;
+        font-size: medium;
+        font-weight: 300;
+        color: #85878c;
+        margin-top: 22px;
+        margin-left: 49px;
+      }
+      #tot_post{
+        margin-left: 51px;
+        font-size: large;
+        font-weight: 600;
+      }
+      #mass_butt{
+        margin-left: 285px;
+        float: right;
+        position: absolute;
+        margin-top: 8px;
+       
+        
+      }
+      #mass_buth{
+        background: #e8dada !important;
+        color: #15a3ce !important ;
+        border: none;
+        width: 90px;
+        height: 35px;
+        border-radius: 50px;
+        padding-bottom: 5px;
+        font-family: Cambria;
+       
+      }
+      #chat{
+        margin-bottom: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid mb 90px bg-black">
+      
+      <div class="container-fluid" >
+        <div class="row">
+          <div  class="col-sm-2" >
+            <img src="images/twitter_blk_1.png" alt="black_twitter_img">
+            
+            <p id="remote"><i class="fa-solid fa-house"></i>
+            
+            <a href="http://127.0.0.1:5501/index.html">Home</a>
+           </p>
+           <p id="mag"> <i class="fa-brands fa-internet-explorer"></i>
+            <a href="http://127.0.0.1:5501/explore.html">Explore</a>
+           </p>
+           <p id="mag"> <i class="fa-regular fa-bell"></i>
+            <a href="http://127.0.0.1:5501/notifications.html">Notification</a>
+           </p>
+           <p id="mag"> <i class="fa-regular fa-envelope"></i>
+            <a href="http://127.0.0.1:5501/messages.html">Messages</a>
+           </p>
+           <p id="mag"><i class="fa-solid fa-bookmark"></i>
+            <a href="http://127.0.0.1:5501/Bookmarks.html">Bookmarks</a>
+           </p>
+           <p id="mag"> <i class="fa-solid fa-table-list"></i>
+            <a href="http://127.0.0.1:5501/Lists.html">Lists</a>
+           </p>
+           <p id="mag"> <i class="fa-regular fa-user"></i>
+            <a href="http://127.0.0.1:5501/profile.html
+            ">Profile</a>
+           </p>
+           <p id="mag"> <i class="fa-solid fa-circle-info"></i>
+            <a href="http://">More</a>
+           </p>
+           <div class="form-group">
+            <button class="btn-custom">Post</button>
+           </div>
+           <a href="">
+           <img src="images/profile_img3.jpeg" alt="mini_profile_img" id="mini_profile_img">
+          </a>
+           <div class="profile_lnk">
+           <a href="">profile_name</a>
+           <a href="" id="clob">@Username</a>
+           </div>
+          </div>
+          <div class="col-sm-6 " >
+            <div class="boxcontainer">
+                <table class="elementscontainer">
+                  <tr>
+                    <td>
+                      <input type="text" placeholder="search Twitter" class="search">
+                    </td>
+                    <td>
+                      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            
+          </div>
+          <div class="col-sm-4 " >
+           
+            <div class="trenb">
+              <p id="trenb">Listen live in Spaces</p>
+              <div class="col-sm-9">
+                <div class="bata_button">
+                  <button id="mano">
+                    <img
+                      src="images/musk.jpeg"
+                      alt="clickable_image"
+                      id="mano_img"
+                    />
+                    +12
+                  </button>
+                </div>
+                <img
+                  src="images/musk.jpeg"
+                  alt="musk_profile_picture"
+                  id="solution"
+                />
+                <p id="host">is hosting</p>
+                <p id="mellon">Elon Musk</p>
+                <p id="path">
+                  Elon answered questions from CNBC after leaving the Senate AI
+                  Insight Forum a few hours ago
+                </p>
+              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="who">
+              <p id="who">Who to follow</p>
+              <div id="chat">
+                <div id="mass_butt">
+                  <button id="mass_buth">Follow</button>
+                </div>
+                <a href="#" id="tim"><img src="images/musk.jpeg" alt="Musk_Profile_image" id="Musk_Profile"></a>
+                    <p id="pot">@elonMusk</p>
+                    <p id="tot_post">Elon Musk</p>
+                    
+              </div>
+              <div id="chat">
+                <div id="mass_butt">
+                  <button id="mass_buth">Follow</button>
+                </div>
+                <a href="#" id="tim"><img src="images/x_output_01.jpeg" alt="New_twitter_image_logo" id="Musk_Profile"></a>
+                    <p id="pot">@twitterX</p>
+                    <p id="tot_post">Twitter-X</p>
+                    
+              </div>
+              <div id="chat">
+                <div id="mass_butt">
+                  <button id="mass_buth">Follow</button>
+                </div>
+                <a href="#" id="tim"><img src="images/profile_img3.jpeg" alt="TT_James__Profile_image" id="Musk_Profile"></a>
+                    <p id="pot">@tt_james_</p>
+                    <p id="tot_post">TT_James_</p>
+                    
+              </div>
+                
+              </div>
+                <p>Terms of service Privacy Policy Cookie Policy Accessbility Ads More
+                    2023 group-3-twitter project.
+                </p>
+          </div>
+          
+          
+        </div>
+      </div>
+    
+   
+    <script src="bootstrap/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+  </body>
+</html>
